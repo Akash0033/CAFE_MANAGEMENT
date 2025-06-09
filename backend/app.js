@@ -9,6 +9,10 @@ const otpRoutes = require('./routes/otpRoutes');
 const itemRoutes = require('./routes/itemRoutes'); 
 const userRoutes = require('./routes/userRoutes'); 
 const categoryRoutes = require('./routes/categoryRoutes'); 
+const studentRoutes = require('./routes/studentRoutes'); 
+const staffRoutes = require('./routes/staffRoutes'); 
+const bookingRoutes = require('./routes/bookingRoutes');
+const adminRoutes = require('./routes/adminRoutes');
 
 dotenv.config(); 
 const app = express(); 
@@ -21,7 +25,10 @@ app.use('/api/otp', otpRoutes);
 app.use('/api/item', itemRoutes); 
 app.use('/api/user', userRoutes); 
 app.use('/api/category', categoryRoutes); 
-
+app.use('/api/student', studentRoutes); 
+app.use('/api/staff', staffRoutes); 
+app.use('/api', bookingRoutes);
+app.use('/api', adminRoutes);
 
 const PORT = process.env.PORT || 5000; 
 

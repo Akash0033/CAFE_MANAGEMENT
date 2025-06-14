@@ -118,7 +118,7 @@ DB_USER=root
 
 DB_PASSWORD=your_password
 
-DB_NAME=canteenkart_db
+DB_NAME=canteenKartDB
 
 EMAIL=your_email
 
